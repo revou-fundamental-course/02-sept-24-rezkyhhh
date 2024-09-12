@@ -1,13 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<link rel="stylesheet" href="css\styles.css">
-
+<html lang="en" style="background-color: aqua;">
+    <title>mini project</title>
+	<center>
+	<style>
+button{
+	width:25%;
+  }
+  .red{
+		background-color:mediumaquamarine;
+		color: white;
+  }
+  .green{
+		background-color: cornflowerblue;
+		color: white;
+    }
+</style>
+<link rel="stylesheet" href="css\style.css" />
 </head>
 <body>
+ <header>
+  <h1>Welcome to Katik</h1>
+  <p>hai sobat selamat datang dikatik</p>
+
+  </header>
+  <main>
+    <section class="selection-content">
+	   <button href="#" type="button" class="red">Segitiga</button><br>
+	   <button href="#"type="button"  class="green">Jajar Genjang</button>
+	</section>
+  </main>
+ <br> <img src="images/segitiga.jpg" height="300" width="450"  >
+
+ <section class="main-content">
+  <aside>
+    <article class="luas-segitiga-content">
+      <div class="luas-segitiga-img"></div>
+      <p>Rumus Luas Segitiga</p>
+    </article>
+
+    <hr />
+
+    <form>
+      <header>
+        <h1 class="luas-segitiga-form-header">Hitung Luas Segitiga</h1>
+      </header>
+
+      <div class="input-wrapper">
+        <label for="alas_segitiga">Panjang Alas:</label>
+        <input id="alas_segitiga" type="number" />
+      </div>
+      <div class="input-wrapper">
+        <label for="tinggi_segitiga">Tinggi:</label>
+        <input id="tinggi_segitiga" type="number" />
+      </div>
+      <div class="input-wrapper">
+        <label for="luas_segitiga">Luas:</label>
+        <input
+          id="luas_segitiga"
+          type="text"
+          name="luas"
+          disabled="true"
+        />
+      </div>
+      <p>
+        <input
+          type="button"
+          value="Hitung"
+          onclick="hitungLuasSegitiga()"
+        />
+      </p>
     
+    </form>
+   </aside>
+  </section>
+</center>
+<script src="js\script.js"></script>
 </body>
 </html>
